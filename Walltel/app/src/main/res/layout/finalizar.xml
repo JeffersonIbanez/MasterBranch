@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="202dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:id="@+id/seupedido"
+            android:layout_width="195dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="    Seu Pedido"
+            android:textSize="26sp"
+            android:layout_gravity="right|center_vertical"
+            android:backgroundTint="#000000"
+            android:textColor="#060606" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:layout_gravity="left|top">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:id="@+id/buttonvoltar"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="onclick" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="127dp"
+        android:layout_gravity="right|top">
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/walltel1"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/final_total"
+        />
+    <FrameLayout
+        android:layout_width="106dp"
+        android:layout_height="131dp"
+        android:layout_gravity="left|bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/buttoncancelar"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="onclick" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="117dp"
+        android:layout_height="131dp"
+        android:layout_gravity="right|bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            android:id="@+id/Finalizar"
+            android:layout_gravity="center"
+            android:onClick="onclick" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="183dp"
+        android:layout_height="221dp"
+        android:text="   Pão \n   Café \n   Macarrão \n   Suco de Laranja \n   Sorvete "
+        android:id="@+id/teste"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="20dp" />
+
+    <FrameLayout
+        android:layout_width="169dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="92dp"
+            android:text="Total: R$41,50"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+</FrameLayout>

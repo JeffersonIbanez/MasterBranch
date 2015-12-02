@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="202dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:id="@+id/pedidosobremesa"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Sobremesas"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#000000"
+            android:textColor="#030303" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sorvete                        R$8,50"
+            android:id="@+id/pedidosorvete"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Torta Limão                R$3,50"
+            android:id="@+id/pedidotorta"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bolo                              R$2,50"
+            android:id="@+id/pedidobolo"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sonho                           R$3,50"
+            android:id="@+id/pedidosonho"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brigadeiro                    R$1,50"
+            android:id="@+id/pedidobrigadeiro"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pave                             R$4,50"
+            android:id="@+id/pedidopave"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pudim                          R$4,50"
+            android:id="@+id/pedidopudim"
+            android:checked="false"
+            android:onClick="selectItem"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="95dp"
+        android:layout_height="131dp"
+        android:layout_gravity="left|bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedir"
+            android:id="@+id/pedirsobremesa"
+            android:layout_gravity="center"
+            android:onClick="finalsobremesa"
+            android:nestedScrollingEnabled="false" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="117dp"
+        android:layout_height="131dp"
+        android:layout_gravity="right|bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:id="@+id/voltarsobremesa"
+            android:layout_gravity="center"
+            android:onClick="onclickbebidas" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="128dp"
+        android:layout_gravity="right|top">
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/walltel1"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/final_sobremesa"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical" >
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhesorvete"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhetorta"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhebolo"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhesonho"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhebrigadeiro"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhepave"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhepudim"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</FrameLayout>

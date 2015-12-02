@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="202dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:id="@+id/pedidoalmoco"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="     Refeição"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#000000"
+            android:textColor="#000000" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Macarrão          R$20,00"
+            android:id="@+id/pedidomacarrao"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arroz                 R$4,00"
+            android:id="@+id/pedidoarroz"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feijão                R$3,00"
+            android:id="@+id/pedidofeijão"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bife                    R$6,00"
+            android:id="@+id/pedidobife"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peixe                 R$7,50"
+            android:id="@+id/pedidopeixe"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Picanha            R$15,00"
+            android:id="@+id/pedidopicanha"
+            android:checked="false"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lasanha            R$22,00"
+            android:id="@+id/pedidolasanha"
+            android:checked="false"
+            android:onClick="selectItem"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="95dp"
+        android:layout_height="131dp"
+        android:layout_gravity="left|bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedir"
+            android:id="@+id/pediralmoco"
+            android:layout_gravity="center"
+            android:onClick="finalalmoco" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="117dp"
+        android:layout_height="131dp"
+        android:layout_gravity="right|bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:id="@+id/voltaralmoco"
+            android:layout_gravity="center"
+            android:onClick="onclickalmoco" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="128dp"
+        android:layout_gravity="right|top">
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/walltel1"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/final_almoco"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical" >
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhemacarrao"
+            android:onClick="detalhes"
+            android:textStyle="normal"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhesarroz"
+            android:onClick="detalhes"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhesfeijao"
+            android:onClick="detalhes"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhesbife"
+            android:onClick="detalhes"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhespeixe"
+            android:onClick="detalhes"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalhespicanha"
+            android:onClick="detalhes"
+            android:textSize="12dp" />
+
+        <Button
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:text="Detalhes"
+            android:id="@+id/detalheslasanha"
+            android:onClick="detalhes"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout><!-- From: file:/F:/TCCWalltel/Walltel/app/src/main/res/layout/almoco.xml -->

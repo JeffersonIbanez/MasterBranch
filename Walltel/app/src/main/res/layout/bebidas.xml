@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Refrigerante           R$6,80"
-            android:id="@+id/pedidococa"
+            android:id="@+id/pedidoRefri"
             android:checked="false"
             android:onClick="selectItem"/>
 
@@ -145,49 +145,56 @@
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhessuco"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhescafe"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhesleite"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
-            android:id="@+id/detalhecoca"
-            android:textSize="12dp" />
+            android:id="@+id/detalherefri"
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhescha"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhescaipirinha"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalheswiskey"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
     </LinearLayout>
 
 </FrameLayout>

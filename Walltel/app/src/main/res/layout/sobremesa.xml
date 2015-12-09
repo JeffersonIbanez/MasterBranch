@@ -143,49 +143,56 @@
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhesorvete"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhetorta"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhebolo"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhesonho"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhebrigadeiro"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhepave"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhepudim"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
     </LinearLayout>
 
 </FrameLayout>

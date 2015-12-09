@@ -2,20 +2,28 @@ package com.walltel.walltel;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.database.SQLException;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-
-import static com.walltel.walltel.R.layout.finalizar;
 import static com.walltel.walltel.R.layout.menu;
 
 public class Menu extends WalltelActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(menu);
+
+
+        try {
+
+        }catch (SQLException ex)
+        {
+            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
+            dlg.setMessage(ex.getMessage());
+            dlg.setNeutralButton("Ok", null);
+            dlg.show();
+        }
+
 
     }
     public void onclick(View v) {
@@ -47,22 +55,11 @@ public class Menu extends WalltelActivity {
                 startActivity(e);
                 break;
             case R.id.buttonfinalizar:
+
                 Intent f = new Intent();
                 f.setClass(this, Finalizar.class);
                 startActivity(f);
                 break;
                 }
-  /*  public void finalpedido(View view){
-        AlertDialog alertDialog;
-        alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Seu Pedido Chegará em 10 minutos");
-        alertDialog.setMessage("Seu Pedido: \n" + selectionAlmoco + "");
-        alertDialog.show();
-        String final_selection ="";
-        for(String Selections : selectionAlmoco){
-            final_selection = final_selection + Selections + "\n";
-        }
-    */
     }
-
 }

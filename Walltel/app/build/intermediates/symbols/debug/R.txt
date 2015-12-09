@@ -489,17 +489,16 @@ int id decor_content_parent 0x7f0c003f
 int id default_activity_button 0x7f0c0027
 int id detalhebolo 0x7f0c00b3
 int id detalhebrigadeiro 0x7f0c00b5
-int id detalhecoca 0x7f0c0072
 int id detalhefrio 0x7f0c0084
 int id detalhemacarrao 0x7f0c005d
-int id detalhemaionese 0x7f0c0086
 int id detalhemanteiga 0x7f0c0081
+int id detalhemel 0x7f0c0082
 int id detalheovo 0x7f0c0083
 int id detalhepanquecas 0x7f0c0085
 int id detalhepao 0x7f0c0080
 int id detalhepave 0x7f0c00b6
 int id detalhepudim 0x7f0c00b7
-int id detalhequeijo 0x7f0c0082
+int id detalherefri 0x7f0c0072
 int id detalhesarroz 0x7f0c005e
 int id detalhesbife 0x7f0c0060
 int id detalhescafe 0x7f0c0070
@@ -514,6 +513,7 @@ int id detalhespeixe 0x7f0c0061
 int id detalhespicanha 0x7f0c0062
 int id detalhessuco 0x7f0c006f
 int id detalheswiskey 0x7f0c0075
+int id detalhetorrada 0x7f0c0086
 int id detalhetorta 0x7f0c00b2
 int id disableHome 0x7f0c000c
 int id edit_query 0x7f0c0043
@@ -550,6 +550,7 @@ int id never 0x7f0c001e
 int id none 0x7f0c000e
 int id normal 0x7f0c000a
 int id parentPanel 0x7f0c002d
+int id pedidoRefri 0x7f0c0068
 int id pedidoalmoco 0x7f0c0050
 int id pedidoarroz 0x7f0c0053
 int id pedidobife 0x7f0c0055
@@ -558,7 +559,6 @@ int id pedidobrigadeiro 0x7f0c00ab
 int id pedidocafé 0x7f0c0066
 int id pedidocaipirinha 0x7f0c006a
 int id pedidocha 0x7f0c0069
-int id pedidococa 0x7f0c0068
 int id pedidofeijão 0x7f0c0054
 int id pedidofrios 0x7f0c007a
 int id pedidolasanha 0x7f0c0058
@@ -616,12 +616,12 @@ int id src_over 0x7f0c0017
 int id status_bar_latest_event_content 0x7f0c009b
 int id submit_area 0x7f0c004c
 int id tabMode 0x7f0c000b
-int id teste 0x7f0c008c
 int id text 0x7f0c00a3
 int id text2 0x7f0c00a1
 int id textSpacerNoButtons 0x7f0c0034
-int id textView 0x7f0c008d
+int id textView 0x7f0c008c
 int id textView1 0x7f0c0064
+int id textView2 0x7f0c008d
 int id time 0x7f0c009f
 int id title 0x7f0c002a
 int id title_template 0x7f0c002f
@@ -705,7 +705,6 @@ int string abc_shareactionprovider_share_with 0x7f060010
 int string abc_shareactionprovider_share_with_application 0x7f060011
 int string abc_toolbar_collapse_description 0x7f060012
 int string app_name 0x7f060015
-int string final_result 0x7f060016
 int string status_bar_notification_info_overflow 0x7f060013
 int style AlertDialog_AppCompat 0x7f09007d
 int style AlertDialog_AppCompat_Light 0x7f09007e

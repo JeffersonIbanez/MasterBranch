@@ -230,7 +230,6 @@
     <!-- From: file:/F:/TCCWalltel/Walltel/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Walltel</string>
-    <string name="final_result">final_result</string>
     <!-- From: file:/F:/TCCWalltel/Walltel/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>

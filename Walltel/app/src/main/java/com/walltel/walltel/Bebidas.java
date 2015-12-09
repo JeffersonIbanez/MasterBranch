@@ -2,13 +2,12 @@ package com.walltel.walltel;
 
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
-
-import java.util.ArrayList;
+import static com.walltel.walltel.Cafe.selectionPedido;
+import static com.walltel.walltel.Cafe.selectionPreco;
 
 public class Bebidas extends WalltelActivity {
 
@@ -32,69 +31,123 @@ public class Bebidas extends WalltelActivity {
         switch (view.getId()) {
             case R.id.pedidosucolaranja:
                 if (checked) {
-                    selectionBebidas.add("Suco de Laranja");
+                    selectionPedido.add("Suco de Laranja");
+                    selectionPreco.add(7.00f);
                 } else {
-                    selectionBebidas.remove("Suco de Laranja");
+                    selectionPedido.remove("Suco de Laranja");
+                    selectionPreco.remove(7.00f);
                 }
                 break;
             case R.id.pedidocafé:
                 if (checked) {
-                    selectionBebidas.add("Café");
+                    selectionPedido.add("Café");
+                    selectionPreco.add(4.50f);
                 } else {
-                    selectionBebidas.remove("Café");
+                    selectionPedido.remove("Café");
+                    selectionPreco.remove(4.50f);
                 }
                 break;
             case R.id.pedidoleite:
                 if (checked) {
-                    selectionBebidas.add("Leite");
+                    selectionPedido.add("Leite");
+                    selectionPreco.add(3.50f);
                 } else {
-                    selectionBebidas.remove("Leite");
+                    selectionPedido.remove("Leite");
+                    selectionPreco.remove(3.50f);
                 }
                 break;
-            case R.id.pedidococa:
+            case R.id.pedidoRefri:
                 if (checked) {
-                    selectionBebidas.add("Coca-Cola");
+                    selectionPedido.add("Refrigerante");
+                    selectionPreco.add(6.80f);
                 } else {
-                    selectionBebidas.remove("Coca-Cola");
+                    selectionPedido.remove("Refrigerante");
+                    selectionPedido.remove(6.80f);
                 }
                 break;
             case R.id.pedidocha:
                 if (checked) {
-                    selectionBebidas.add("Chá");
+                    selectionPedido.add("Chá");
+                    selectionPreco.add(4.50f);
                 } else {
-                    selectionBebidas.remove("Chá");
+                    selectionPedido.remove("Chá");
+                    selectionPreco.remove(4.50f);
                 }
                 break;
             case R.id.pedidocaipirinha:
                 if (checked) {
-                    selectionBebidas.add("Caipirinha");
+                    selectionPedido.add("Caipirinha");
+                    selectionPreco.add(11.00f);
                 } else {
-                    selectionBebidas.remove("Caipirinha");
+                    selectionPedido.remove("Caipirinha");
+                    selectionPreco.remove(11.00f);
                 }
                 break;
             case R.id.pedidowhiskey:
                 if (checked) {
-                    selectionBebidas.add("Whiskey");
+                    selectionPedido.add("Whiskey");
+                    selectionPreco.add(25.00f);
                 } else {
-                    selectionBebidas.remove("Whiskey");
+                    selectionPedido.remove("Whiskey");
+                    selectionPreco.remove(25.00f);
                 }
                 break;
         }
     }
 
     public void finalbebidas(View view){
-        AlertDialog alertDialog;
-        alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Pedido Enviado");
-        alertDialog.setMessage("Seu Pedido: \n" + selectionBebidas + "\n");
-        alertDialog.show();
-        String final_selection = "";
-        for (String Selections : selectionBebidas) {
-            final_selection = final_selection + Selections + "\n";
-        }
         Intent l = new Intent();
         l.setClass(this, Menu.class);
         startActivity(l);
 
+    }
+    public void detalhes(View v) {
+        switch (v.getId()) {
+            case R.id.detalhessuco:
+                AlertDialog alertDialog;
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("Copo de 350ml, com suco natural da fruta acompanhado com sachê de açúcar.");
+                alertDialog.show();
+                break;
+
+            case R.id.detalhescafe:
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("Delicioso café puro, feito com grãos moidos na hora.");
+                alertDialog.show();
+                break;
+            case R.id.detalhesleite:
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("Leite quente para acompanhar o café.");
+                alertDialog.show();
+                break;
+            case R.id.detalherefri:
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("Refrigerente das marcas tradicionais.");
+                alertDialog.show();
+                break;
+            case R.id.detalhescha:
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("Chá de limão quentinho, com aquele gosto de que foi feito pela vovó.");
+                alertDialog.show();
+                break;
+            case R.id.detalhescaipirinha:
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("Caipirinha caprichada, no sabor limão.");
+                alertDialog.show();
+                break;
+            case R.id.detalheswiskey:
+                alertDialog = new AlertDialog.Builder(this).create();
+                alertDialog.setTitle("Detalhes");
+                alertDialog.setMessage("para aqueles que gostam de uma bebida alcoólica mais refinada.");
+                alertDialog.show();
+                break;
+
+        }
     }
 }

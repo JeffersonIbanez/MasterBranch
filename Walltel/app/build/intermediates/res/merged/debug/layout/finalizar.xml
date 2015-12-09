@@ -82,14 +82,6 @@
 
     </FrameLayout>
 
-    <TextView
-        android:layout_width="183dp"
-        android:layout_height="221dp"
-        android:text="   Pão \n   Café \n   Macarrão \n   Suco de Laranja \n   Sorvete "
-        android:id="@+id/teste"
-        android:layout_gravity="left|center_vertical"
-        android:textSize="20dp" />
-
     <FrameLayout
         android:layout_width="169dp"
         android:layout_height="226dp"
@@ -98,11 +90,24 @@
         <TextView
             android:layout_width="140dp"
             android:layout_height="92dp"
-            android:text="Total: R$41,50"
             android:id="@+id/textView"
             android:layout_gravity="center"
             android:textSize="20dp" />
     </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="192dp"
+        android:layout_height="281dp"
+        android:layout_gravity="left|center_vertical">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="260dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:layout_gravity="center" />
 
 </FrameLayout>
 <!-- From: file:/F:/TCCWalltel/Walltel/app/src/main/res/layout/finalizar.xml -->

@@ -146,49 +146,56 @@
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhepao"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhemanteiga"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
-            android:id="@+id/detalhequeijo"
-            android:textSize="12dp" />
+            android:id="@+id/detalhemel"
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalheovo"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhefrio"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
             android:id="@+id/detalhepanquecas"
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:onClick="detalhes" />
 
         <Button
             android:layout_width="116dp"
             android:layout_height="33dp"
             android:text="Detalhes"
-            android:id="@+id/detalhemaionese"
-            android:textSize="12dp" />
+            android:id="@+id/detalhetorrada"
+            android:textSize="12dp"
+            android:onClick="detalhes" />
     </LinearLayout>
 
 </FrameLayout>

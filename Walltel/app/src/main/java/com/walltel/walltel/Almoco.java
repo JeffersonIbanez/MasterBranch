@@ -2,15 +2,14 @@ package com.walltel.walltel;
 
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import static com.walltel.walltel.Cafe.selectionPedido;
+import static com.walltel.walltel.Cafe.selectionPreco;
 
-import java.util.ArrayList;
-
-public class Almoco extends WalltelActivity {
+public class Almoco  extends WalltelActivity{
     TextView final_text;
 
 
@@ -20,6 +19,7 @@ public class Almoco extends WalltelActivity {
         setContentView(R.layout.almoco);
         final_text = (TextView)findViewById(R.id.final_almoco);
         final_text.setEnabled(false);
+
     }
 
     public void onclickalmoco(View v) {
@@ -27,75 +27,82 @@ public class Almoco extends WalltelActivity {
             l.setClass(this, Menu.class);
             startActivity(l);
     }
+
+
+
     public void selectItem(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()) {
             case R.id.pedidomacarrao:
                 if (checked) {
-                    selectionAlmoco.add("Macarrão");
+                    selectionPedido.add("Macarrão");
+                    selectionPreco.add(20.00f);
                 } else {
-                    selectionAlmoco.remove("Macarrão");
+                    selectionPedido.remove("Macarrão");
+                    selectionPreco.remove(20.00f);
                 }
                 break;
             case R.id.pedidoarroz:
                 if (checked) {
-                    selectionAlmoco.add("Arroz");
+                    selectionPedido.add("Arroz");
+                    selectionPreco.add(4.00f);
                 } else {
-                    selectionAlmoco.remove("Arroz");
+                    selectionPedido.remove("Arroz");
+                    selectionPreco.remove(4.00f);
                 }
                 break;
             case R.id.pedidofeijão:
                 if (checked) {
-                    selectionAlmoco.add("Feijão");
+                    selectionPedido.add("Feijão");
+                    selectionPreco.add(3.00f);
                 } else {
-                    selectionAlmoco.remove("Feijão");
+                    selectionPedido.remove("Feijão");
+                    selectionPreco.remove(3.00f);
                 }
                 break;
             case R.id.pedidobife:
                 if (checked) {
-                    selectionAlmoco.add("Bife");
+                    selectionPedido.add("Bife");
+                    selectionPreco.add(6.00f);
                 } else {
-                    selectionAlmoco.remove("Bife");
+                    selectionPedido.remove("Bife");
+                    selectionPreco.remove(6.00f);
                 }
                 break;
             case R.id.pedidopeixe:
                 if (checked) {
-                    selectionAlmoco.add("Peixe");
+                    selectionPedido.add("Peixe");
+                    selectionPreco.add(7.50f);
                 } else {
-                    selectionAlmoco.remove("Peixe");
+                    selectionPedido.remove("Peixe");
+                    selectionPreco.remove(7.50f);
                 }
                 break;
             case R.id.pedidopicanha:
                 if (checked) {
-                    selectionAlmoco.add("Picanha");
+                    selectionPedido.add("Picanha");
+                    selectionPreco.add(15.00f);
                 } else {
-                    selectionAlmoco.remove("Picanha");
+                    selectionPedido.remove("Picanha");
+                    selectionPreco.remove(15.00f);
                 }
                 break;
             case R.id.pedidolasanha:
                 if (checked) {
-                    selectionAlmoco.add("Lasanha");
+                    selectionPedido.add("Lasanha");
+                    selectionPreco.add(22.00f);
                 } else {
-                    selectionAlmoco.remove("Lasanha");
+                    selectionPedido.remove("Lasanha");
+                    selectionPreco.remove(22.00f);
                 }
                 break;
         }
     }
 
     public void finalalmoco(View view){
-        AlertDialog alertDialog;
-        alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Pedido Enviado");
-        alertDialog.setMessage("Seu Pedido: \n" + selectionAlmoco + "\n");
-        alertDialog.show();
-        String final_selection ="";
-        for(String Selections : selectionAlmoco){
-            final_selection = final_selection + Selections + "\n";
-        }
         Intent l = new Intent();
         l.setClass(this, Menu.class);
         startActivity(l);
-
     }
     public void detalhes(View v) {
         switch (v.getId()) {
